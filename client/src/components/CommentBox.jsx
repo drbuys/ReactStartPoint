@@ -20,18 +20,8 @@ var CommentBox = React.createClass({
     },
 
     handleCommentDelete: function(comment){
-        // for(var i = 0; i < this.state.data.length; i++) {
-        //     if(this.state.data[i].text == comment.text) {
-        //         var newComments = this.state.data.splice(i, 1);
-        //         this.setState({data: newComments});
-        //         break;
-        //     }
-        // }
-        // console.log(comment.text);
         for(var com in this.state.data){
-            // console.log(this.state.data[com].text);
             if(this.state.data[com].text == comment.text){
-                // var newComments = this.state.data.splice(com,1);
                 this.state.data.splice(com,1);
                 this.setState({data: this.state.data});
                 break;

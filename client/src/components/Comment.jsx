@@ -4,7 +4,6 @@ var Comment = React.createClass({
 
     handleClick: function(e) {
         var deleteComment = this.props.deleteMe({author: this.props.author, text: this.props.text});
-        console.log(this.props);
         return deleteComment;
     },
 
